@@ -11,7 +11,7 @@ Custom rice on Ubuntu 23.10 with mixes of Everforest and Catppuccin themes.
 * **Launcher:** Rofi
 * **Bar:** Polybar
 * **Compositor:** Picom
-* **Wallpaper:*$ [available here](https://github.com/jeremykervran/dotfiles-ubuntu/pictures/wallpaper.jpg)
+* **Wallpaper:** [available here](https://github.com/jeremykervran/dotfiles-ubuntu/pictures/wallpaper.jpg)
 
 ### In progress
 
