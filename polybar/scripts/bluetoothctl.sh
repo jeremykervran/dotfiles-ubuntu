@@ -37,8 +37,8 @@ bluetooth_print() {
                         else
                             device_battery_icon="󰤾"
                         fi
-
-                        device_output="$device_output $device_battery_icon $device_battery_percent%"
+			# use $device_battery_percent to add percentages
+                        device_output="$device_output $device_battery_icon"
                     fi
 
                     if [ $counter -gt 0 ]; then
