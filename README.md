@@ -15,7 +15,8 @@ Custom rice on Ubuntu 23.10 with mixes of Everforest and Catppuccin themes.
 
 ### In progress
 
-* Add Spotify script for Polybar
+* Make clicks work in Polybar scripts
+* Fix rounded borders black pixels in various apps (Spotify, Stremio etc)
 * Improve Dunst notifications look
 
 ## Screenshots
