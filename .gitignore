@@ -5,6 +5,7 @@
 !.gitignore
 !README.md
 !alacritty/
+!spaceship/
 !i3/
 !picom/
 !rofi/
