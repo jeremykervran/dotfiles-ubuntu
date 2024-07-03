@@ -1,9 +1,6 @@
 # Prompt infos
 SPACESHIP_PROMPT_ORDER=(
-  time           # Time stamps section
-  user           # Username section
   dir            # Current directory section
-  host           # Hostname section
   git            # Git section (git_branch + git_status)
   package        # Package version
   node           # Node.js section
@@ -17,8 +14,13 @@ SPACESHIP_PROMPT_ORDER=(
   char           # Prompt character
 )
 
+SPACESHIP_RPROMPT_ORDER=(
+  user
+  time
+)
+
 # Char symbol
-SPACESHIP_CHAR_SYMBOL="❯ "
+SPACESHIP_CHAR_SYMBOL="❯_ "
 
 # Removes prefixes
 SPACESHIP_PROMPT_PREFIXES_SHOW=false
@@ -27,10 +29,11 @@ SPACESHIP_PROMPT_PREFIXES_SHOW=false
 #SPACESHIP_PROMPT_DEFAULT_PREFIX=""
 
 # Display time
-SPACESHIP_TIME_SHOW=false
+SPACESHIP_TIME_SHOW=always
 
 # Display username always
-SPACESHIP_USER_SHOW=false
+SPACESHIP_USER_SHOW=always
+SPACESHIP_USER_COLOR=green
 
 # Do not truncate path in repos
 SPACESHIP_DIR_TRUNC_REPO=true
