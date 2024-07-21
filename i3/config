@@ -30,7 +30,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork --image=~/Pictures/wp-forest.jpg
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork --image=~/Pictures/wp-pink.jpg
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -55,7 +55,8 @@ bindsym $mod+Shift+Q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $opt+space exec rofi -show drun
+bindsym $mod+d exec rofi -show drun
+
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -195,7 +196,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id xrandr --size 2560x1440 --rate 165.00
 
 # Wallpaper
-exec_always --no-startup-id feh --bg-fill ~/Pictures/wp-forest.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/wp-pink.jpg
 
 # Bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
