@@ -209,9 +209,11 @@ bindsym $mod+p exec --no-startup-id maim --format=jpg "/home/$USER/Pictures/scre
 
 # Windows behaviour
 default_orientation vertical
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 3
 for_window [class="^.*"] split toggle
 
 # Gaps
 gaps inner 10
 gaps outer 5
+
+client.focused              #ffffff #ffffff #ffffff #ffffff
