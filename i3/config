@@ -207,6 +207,9 @@ exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 # Binds
 bindsym $mod+p exec --no-startup-id maim --format=jpg "/home/$USER/Pictures/screenshots/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-all.jpg" && notify-send -u normal "󰄀 : screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-all.jpg"
 
+# Cursor
+focus_follows_mouse no
+
 # Windows behaviour
 default_orientation vertical
 for_window [class="^.*"] border pixel 3
