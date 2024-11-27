@@ -14,3 +14,5 @@ spaceship/*.zwc
 !dunst/
 !bat/
 !pictures/
+!hypr
+!waybar

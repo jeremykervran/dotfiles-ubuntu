@@ -1,0 +1,51 @@
+{
+  "layer": "bottom",
+  "position": "top",
+  "height": 40,
+  "width": 2520,
+  "margin": "15px 15px 0 15px",
+  "padding": "0 10px",
+  "spacing": 5,
+  "modules-left": ["clock", "hyprland/window"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["custom/spotify", "cpu","memory","pulseaudio"],
+
+  "hyprland/window": {
+    "max-length": 40, // Characters count
+    "separate-outputs": true
+  },
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "format": "{icon}",
+    "tooltip": false,
+    "all-outputs": true,
+    "format-icons": {
+      "active": "",
+      "default": ""
+    }
+  },
+  
+  "clock": {
+    "format": "{:%d/%m/%Y - %H:%M}"
+  },
+
+  "custom/spotify": {
+    "exec": "/usr/bin/python3 /home/jeremy/.config/waybar/modules/spotify.py --player spotify",
+    "format": "{}  ",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-icons": {
+      "default": ["\uf026", "\uf027", "\uf028"]
+    },
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol",
+    "format-muted": "\uf00d {volume}%"
+  }
+}
