@@ -1,14 +1,11 @@
 {
   "layer": "bottom",
   "position": "top",
-  "height": 40,
-  "width": 2520,
-  "margin": "15px 15px 0 15px",
-  "padding": "0 10px",
+  "width": 2500,
   "spacing": 5,
   "modules-left": ["clock", "hyprland/window"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["custom/spotify", "cpu","memory","pulseaudio"],
+  "modules-right": ["custom/spotify", "cpu","memory","bluetooth","pulseaudio"],
 
   "hyprland/window": {
     "max-length": 40, // Characters count
@@ -27,7 +24,7 @@
   },
   
   "clock": {
-    "format": "{:%d/%m/%Y - %H:%M}"
+    "format": "{:%d/%m/%Y - %H:%M}  "
   },
 
   "custom/spotify": {
@@ -39,8 +36,19 @@
     "on-scroll-down": "playerctl previous"
   },
 
+  "bluetooth": {
+    "format": "",
+    "format-disabled": "", // an empty format will hide the module
+    "format-connected": " {device_alias}",
+    "tooltip-format": " {device_alias}",
+    "tooltip-format-connected": "{device_enumerate}",
+    "tooltip-format-enumerate-connected": " {device_alias}"
+  },
+
   "pulseaudio": {
     "format": "{icon} {volume}%",
+    "format-bluetooth": " {icon} {volume} %",
+    "format-muted": " mute",
     "format-icons": {
       "default": ["\uf026", "\uf027", "\uf028"]
     },
@@ -48,4 +56,5 @@
     "on-click-right": "pavucontrol",
     "format-muted": "\uf00d {volume}%"
   }
+  
 }

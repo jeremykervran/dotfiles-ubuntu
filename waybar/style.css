@@ -3,7 +3,7 @@
   font-family: 'Hack Nerd Font', 'Symbols Nerd Font Mono';
   font-size: 13px;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
-  min-height: 35px;
+  min-height: 30px;
 }
 
 window#waybar {
@@ -11,56 +11,32 @@ window#waybar {
 }
 
 #waybar.empty #window {  
- background:none;  
-}
-
-#workspaces {
-  border-radius: 8px;
-  background-color: #11111b;
-  opacity: 0.7;
-  color: #b4befe;
-  margin-top: 10px;
-  margin-right: 10px;
-  padding-top: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
+ background:none;
+ border: none;
 }
 
 #workspaces button {
   background: #11111b;
-  color: #b4befe;
+  color: #d8e4ff;
 }
 
-#clock, #window, #pulseaudio, #cpu, #memory, #bluetooth, #tray {
-  border-radius: 8px;
+#workspaces, #clock, #window, #pulseaudio, #cpu, #memory, #bluetooth, #tray {
+  border-radius: 10px;
+  border: 2px solid white;
   background-color: #11111b;
   opacity: 0.7;
-  color: #cdd6f4;
-  margin-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 10px;
-}
-
-#backlight, #bluetooth {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  padding-right: 5px;
-  margin-right: 0
-}
-
-#clock {
-  margin-right: 0;
+  color: #d8e4ff;
+  padding: 0 10px;
+  margin: 30px 0 0 0;
 }
 
 .custom-spotify {
-    color: #41E17A;
-    border-radius: 8px;
-    background-color: #11111b;
-    opacity: 0.7;
-    margin-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 10px;
+  color: #41E17A;
+  border-radius: 8px;
+  border: 2px solid white;
+  background-color: #11111b;
+  opacity: 0.7;
+  padding: 0 15px 0 10px;
+  margin: 30px 0 0 0;
 }
 
