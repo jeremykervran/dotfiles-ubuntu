@@ -24,12 +24,15 @@
   },
   
   "custom/powermenu": {
-    "format": "",
+    "format": "",
     "on-click": "rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu -theme-str 'window {width: 33%; height: 20%;}'"
   },
 
   "clock": {
-    "format": "{:%d/%m/%Y - %H:%M}  "
+    "format": "{:%d/%m/%Y - %H:%M} ",
+    "tooltip": false,
+    "on-click": "morgen",
+    "on-click-right": "killall morgen"
   },
 
   "custom/spotify": {
