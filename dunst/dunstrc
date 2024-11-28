@@ -37,7 +37,7 @@
     origin = bottom-left
 
     # Offset from the origin
-    offset = 1080x160
+    offset = 1080x120
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0

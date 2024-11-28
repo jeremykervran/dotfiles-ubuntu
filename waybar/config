@@ -18,8 +18,8 @@
     "tooltip": false,
     "all-outputs": true,
     "format-icons": {
-      "active": "",
-      "default": ""
+      "active": "",
+      "default": ""
     }
   },
   
@@ -29,7 +29,7 @@
   },
 
   "clock": {
-    "format": "{:%d/%m/%Y - %H:%M} ",
+    "format": "  {:%d/%m/%Y - %H:%M}  ",
     "tooltip": false,
     "on-click": "morgen",
     "on-click-right": "killall morgen"
@@ -54,7 +54,7 @@
   },
 
   "pulseaudio": {
-    "format": "{icon} {volume}%",
+    "format": "{icon}  {volume}%",
     "format-bluetooth": " {icon} {volume} %",
     "format-muted": " mute",
     "format-icons": {
