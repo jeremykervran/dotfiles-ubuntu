@@ -2,8 +2,8 @@
   "layer": "bottom",
   "position": "top",
   "width": 2500,
-  "spacing": 5,
-  "modules-left": ["clock", "hyprland/window"],
+  "spacing": 10,
+  "modules-left": ["custom/powermenu", "clock", "hyprland/window"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["custom/spotify", "cpu","memory","bluetooth","pulseaudio"],
 
@@ -23,6 +23,11 @@
     }
   },
   
+  "custom/powermenu": {
+    "format": "",
+    "on-click": "rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu -theme-str 'window {width: 33%; height: 20%;}'"
+  },
+
   "clock": {
     "format": "{:%d/%m/%Y - %H:%M}  "
   },
