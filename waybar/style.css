@@ -3,8 +3,8 @@
   font-family: 'Hack Nerd Font', 'Symbols Nerd Font Mono';
   font-size: 14px;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
-  min-height: 30px;
-  min-width: 30px;
+  min-height: 20px;
+  min-width: 20px;
 }
 
 window#waybar {
@@ -19,14 +19,14 @@ window#waybar {
 #workspaces button {
   background: #11111b;
   color: #d8e4ff;
-  padding: 0;
+  padding: 0 2px 0 0;
 }
 
 #workspaces, #window, #pulseaudio, #cpu, #memory, #bluetooth, #tray {
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, 1);
   background-color: #11111b;
-  opacity: 0.6;
+  opacity: 0.75;
   color: #d8e4ff;
   padding: 0 10px;
   margin: 30px 0 0 0;
@@ -36,7 +36,7 @@ window#waybar {
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, 1);
   background-color: #11111b;
-  opacity: 0.6;
+  opacity: 0.75;
   color: #d8e4ff;
   padding: 0 16px 0 10px;
   margin: 30px 0 0 0;
@@ -45,13 +45,11 @@ window#waybar {
 #custom-powermenu {
   font-size: 18px;
   font-weight: bold;
-  min-width: 30px;
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, 1);
   background-color: #11111b;
   border-radius: 10px;
-  opacity: 0.6;
-  ;color: #00E4D0;
+  opacity: 0.75;
   color: #33ccff;
   padding: 10px 12px 10px 10px;
   margin: 30px 0 0 0;
@@ -62,7 +60,7 @@ window#waybar {
   border-radius: 8px;
   border: 2px solid rgba(255, 255, 255, 1);
   background-color: #11111b;
-  opacity: 0.6;
+  opacity: 0.75;
   padding: 0 15px 0 10px;
   margin: 30px 0 0 0;
 }

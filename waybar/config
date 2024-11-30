@@ -40,8 +40,8 @@
     "format": "{}  ",
     "return-type": "json",
     "on-click": "playerctl play-pause",
-    "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl previous"
+    "on-click-right": "playerctl previous",
+    "on-click-middle": "playerctl next",
   },
 
   "bluetooth": {
