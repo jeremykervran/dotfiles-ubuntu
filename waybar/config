@@ -29,7 +29,7 @@
   },
 
   "clock": {
-    "format": "{:%d/%m/%Y - %H:%M} ",
+    "format": "󰸗 {:%d/%m/%Y - %H:%M} ",
     "tooltip": false,
     "on-click": "morgen",
     "on-click-right": "killall morgen"
@@ -55,7 +55,7 @@
 
   "pulseaudio": {
     "format": "{icon} {volume}%",
-    "format-bluetooth": " {icon} {volume} %",
+    "format-bluetooth": " {icon}  {volume}%",
     "format-muted": " mute",
     "format-icons": {
       "default": ["\uf026", "\uf027", "\uf028"]

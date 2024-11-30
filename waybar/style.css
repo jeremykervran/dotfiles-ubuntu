@@ -17,27 +17,27 @@ window#waybar {
 }
 
 #workspaces button {
-  background: #11111b;
-  color: #d8e4ff;
+  background: #1E1E2E;
+  color: #CDD6F4;
   padding: 0 2px 0 0;
 }
 
 #workspaces, #window, #pulseaudio, #cpu, #memory, #bluetooth, #tray {
   border-radius: 10px;
-  border: 2px solid rgba(255, 255, 255, 1);
-  background-color: #11111b;
+  border: 2px solid #CDD6F4;
+  background-color: #1E1E2E;
   opacity: 0.8;
-  color: #d8e4ff;
+  color: #CDD6F4;
   padding: 0 10px;
   margin: 30px 0 0 0;
 }
 
 #clock {
   border-radius: 10px;
-  border: 2px solid rgba(255, 255, 255, 1);
-  background-color: #11111b;
+  border: 2px solid #CDD6F4;
+  background-color: #1E1E2E;
   opacity: 0.8;
-  color: #d8e4ff;
+  color: #CDD6F4;;
   padding: 0 16px 0 10px;
   margin: 30px 0 0 0;
 }
@@ -46,22 +46,21 @@ window#waybar {
   font-size: 18px;
   font-weight: bold;
   border-radius: 10px;
-  border: 2px solid rgba(255, 255, 255, 1);
-  background-color: #11111b;
+  border: 2px solid #CDD6F4;
+  background-color: #1E1E2E;
   border-radius: 10px;
   opacity: 0.8;
-  color: #33ccff;
+  color: #8bd5ca;
   padding: 10px 12px 10px 10px;
   margin: 30px 0 0 0;
 }
 
 #custom-spotify {
-  color: #41E17A;
+  color: #a6d189;
   border-radius: 8px;
-  border: 2px solid rgba(255, 255, 255, 1);
-  background-color: #11111b;
+  border: 2px solid #CDD6F4;
+  background-color: #1E1E2E;
   opacity: 0.8;
   padding: 0 15px 0 10px;
   margin: 30px 0 0 0;
 }
-
