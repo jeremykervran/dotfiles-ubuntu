@@ -7,10 +7,7 @@
 !alacritty/
 !spaceship/
 spaceship/*.zwc
-!i3/
-!picom/
 !rofi/
-!polybar/
 !dunst/
 !bat/
 !pictures/
