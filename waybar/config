@@ -5,7 +5,7 @@
   "spacing": 10,
   "modules-left": ["custom/powermenu", "clock", "custom/spotify"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["cpu","memory","network","bluetooth","pulseaudio"],
+  "modules-right": ["tray","cpu","memory","network","bluetooth","pulseaudio"],
 
   "hyprland/window": {
     "max-length": 40, // Characters count
@@ -44,6 +44,12 @@
     "on-click-middle": "playerctl -p spotify next",
   },
 
+  "tray": {
+    "icon-size": 14,
+    "spacing": 2,
+    "show-passive-items": false
+  },
+
   "cpu": {
     "format": " {usage}%",
     "interval": 5
@@ -76,7 +82,8 @@
   },
 
   "network": {
-    "format-ethernet": " {ipaddr}/{cidr}",
-    "format-disconnected": "Disconnected ⚠"
+    "format-ethernet": "󰜮 {bandwidthDownOctets} 󰜷 {bandwidthUpOctets}",
+    "format-disconnected": "Disconnected ⚠",
+    "interval": 5
   }  
 }
