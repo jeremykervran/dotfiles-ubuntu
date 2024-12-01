@@ -84,6 +84,6 @@
   "network": {
     "format-ethernet": "󰜮 {bandwidthDownOctets} 󰜷 {bandwidthUpOctets}",
     "format-disconnected": "Disconnected ⚠",
-    "interval": 5
+    "interval": 3
   }  
 }
