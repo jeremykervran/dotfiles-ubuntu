@@ -44,6 +44,16 @@
     "on-click-middle": "playerctl -p spotify next",
   },
 
+  "cpu": {
+    "format": " {usage}%",
+    "interval": 5
+  },
+
+  "memory": {
+    "format": " {percentage}%",
+    "interval": 5
+  },
+
   "bluetooth": {
     "format": "",
     "format-disabled": "", // an empty format will hide the module
@@ -66,7 +76,7 @@
   },
 
   "network": {
-    "format-ethernet": "{ipaddr}/{cidr} ",
+    "format-ethernet": " {ipaddr}/{cidr}",
     "format-disconnected": "Disconnected ⚠"
   }  
 }
