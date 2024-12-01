@@ -3,9 +3,9 @@
   "position": "top",
   "width": 2500,
   "spacing": 10,
-  "modules-left": ["custom/powermenu", "clock", "hyprland/window"],
+  "modules-left": ["custom/powermenu", "clock", "custom/spotify"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["custom/spotify", "cpu","memory","bluetooth","pulseaudio"],
+  "modules-right": ["cpu","memory","network","bluetooth","pulseaudio"],
 
   "hyprland/window": {
     "max-length": 40, // Characters count
@@ -39,9 +39,9 @@
     "exec": "/usr/bin/python3 /home/jeremy/.config/waybar/modules/spotify.py --player spotify",
     "format": "{}  ",
     "return-type": "json",
-    "on-click": "playerctl play-pause",
-    "on-click-right": "playerctl previous",
-    "on-click-middle": "playerctl next",
+    "on-click": "playerctl -p spotify play-pause",
+    "on-click-right": "playerctl -p spotify previous",
+    "on-click-middle": "playerctl -p spotify next",
   },
 
   "bluetooth": {
@@ -55,7 +55,7 @@
 
   "pulseaudio": {
     "format": "{icon} {volume}%",
-    "format-bluetooth": " {icon}  {volume}%",
+    "format-bluetooth": " {icon} {volume}%",
     "format-muted": " mute",
     "format-icons": {
       "default": ["\uf026", "\uf027", "\uf028"]
@@ -63,6 +63,10 @@
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click-right": "pavucontrol",
     "format-muted": "\uf00d {volume}%"
-  }
-  
+  },
+
+  "network": {
+    "format-ethernet": "{ipaddr}/{cidr} ",
+    "format-disconnected": "Disconnected ⚠"
+  }  
 }

@@ -1,7 +1,7 @@
 * {
   border: none;
-  font-family: 'Hack Nerd Font', 'Symbols Nerd Font Mono';
-  font-size: 14px;
+  font-family: 'Caskaydia Cove Nerd Font', 'Hack Nerd Font';
+  font-size: 13px;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
   min-height: 20px;
   min-width: 20px;
@@ -37,7 +37,7 @@ window#waybar {
   border: 2px solid #CDD6F4;
   background-color: #1E1E2E;
   opacity: 0.8;
-  color: #CDD6F4;;
+  color: #CDD6F4;
   padding: 0 16px 0 10px;
   margin: 30px 0 0 0;
 }
@@ -62,5 +62,15 @@ window#waybar {
   background-color: #1E1E2E;
   opacity: 0.8;
   padding: 0 15px 0 10px;
+  margin: 30px 0 0 0;
+}
+
+#network {
+  border-radius: 10px;
+  border: 2px solid #CDD6F4;
+  background-color: #1E1E2E;
+  opacity: 0.8;
+  color: #CDD6F4;
+  padding: 0 16px 0 10px;
   margin: 30px 0 0 0;
 }

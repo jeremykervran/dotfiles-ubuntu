@@ -4,7 +4,6 @@
     ### Display ###
 
     # Which monitor should the notifications be displayed on.
-    #monitor = 0
     monitor= DP-3
 
     # Display notification on focused monitor.  Possible modes are:
@@ -28,7 +27,7 @@
     width = 400
 
     # The maximum height of a single notification, excluding the frame.
-    height = 160
+    height = (100, 400)
 
     # Corner radius
     corner_radius = 10
@@ -104,10 +103,11 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 0
+    frame_width = 2
 
     # Defines color of the frame around the notification window.
-    frame_color = "#fff"
+    #frame_color = "#fff"
+    frame_color = "#ea76cbee"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -340,7 +340,8 @@
     #background = "#1E2326"
     background = "#11111b"
     foreground = "#d8e4ff"
-    frame_color = "a7c080"
+    #frame_color = "a7c080"
+    frame_color = "#a6e3a1"
     timeout = 3
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
@@ -349,7 +350,8 @@
     #background = "#1E2326"
     background = "#11111b"
     foreground = "#d8e4ff"
-    frame_color = "#33ccff"
+    #frame_color = "#33ccff"
+    frame_color = "#89b4fa"
     timeout = 3
     override_pause_level = 30
     # Icon for notifications with normal urgency, uncomment to enable
@@ -359,7 +361,8 @@
     #background = "#1E2326"
     background = "#11111b"
     foreground = "#d8e4ff"
-    frame_color = "#e67e80"
+    #frame_color = "#e67e80"
+    frame_color = "##f38ba8"
     timeout = 5
     override_pause_level = 60
     # Icon for notifications with critical urgency, uncomment to enable
