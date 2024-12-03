@@ -47,16 +47,17 @@
   "tray": {
     "icon-size": 16,
     "spacing": 2,
-    "show-passive-items": false
+    "show-passive-items": true,
+    "reverse-direction": false
   },
 
   "cpu": {
-    "format": " {usage}%",
+    "format": "  {usage}%",
     "interval": 5
   },
 
   "memory": {
-    "format": " {percentage}%",
+    "format": "  {percentage}%",
     "interval": 5
   },
 
@@ -70,7 +71,7 @@
   },
 
   "pulseaudio": {
-    "format": "{icon} {volume}%",
+    "format": "{icon}  {volume}%",
     "format-bluetooth": " {icon} {volume}%",
     "format-muted": " mute",
     "format-icons": {

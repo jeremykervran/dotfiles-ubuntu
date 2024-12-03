@@ -8,7 +8,7 @@ padding = { x = 15, y = 0 }
 opacity = 0.85
 
 [font]
-size = 10
+size = 10.5
 
 [font.normal]
 family = "Caskaydia Cove Nerd Font"
