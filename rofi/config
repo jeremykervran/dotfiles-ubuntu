@@ -1,2 +1,2 @@
 ! Rofi configuration
-rofi.theme: /usr/share/rofi/themes/everforest.rasi
+rofi.theme: /usr/share/rofi/themes/catppuccin-mocha.rasi
